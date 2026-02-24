@@ -153,5 +153,6 @@ COPY ./holmes /app/holmes
 COPY ./server.py /app/server.py
 COPY ./holmes_cli.py /app/holmes_cli.py
 
+USER 1001
 ENTRYPOINT ["python", "holmes_cli.py"]
 #CMD ["http://docker.for.mac.localhost:9093"]
